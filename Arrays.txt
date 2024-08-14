@@ -1,0 +1,6 @@
+Arrays
+
+lista.push - Adiciona item no final da lista
+lista.pop - Remove o ultimo item da lista
+lista.unshift - Adiciona item no primeiro indice
+lista.shift - Remove o primeiro item da lista

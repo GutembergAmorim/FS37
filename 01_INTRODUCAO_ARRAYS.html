@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const lista = ["Ana", "Robson", "Roberto"]
+
+        const tamanhoLista = lista.length;
+        console.log('Tamanho da lista', tamanhoLista);
+        lista[4] = "Max"
+
+        //Adicionar item ao final da lista
+        lista.push('Carla')
+        lista.push('Carlos')
+        lista.push('Raimunda')
+
+        //Remover item do final da lista
+        lista.pop();
+        lista.pop();
+
+        // Adicionar no inicio da lista
+        lista.unshift("Anderson")
+        lista.unshift("Daniel")
+
+        //Remover do inicio da lista
+        lista.shift();
+        lista.shift();
+
+        //
+
+        console.log(lista)
+    </script>
+</body>
+</html>

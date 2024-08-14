@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+        <button type="button" id="btn_salvar" onclick="adicionarValor()">Salvar</button>
+    </form>
+    <div id="exibicao_lista"></div>
+
+    <script>
+        const lista = []
+
+        function adicionarValor () {
+            const nome = document.getElementById('nome').value;
+            lista.push(nome);
+            document.getElementById('nome').value = "";
+
+            document.getElementById('exibicao_lista').innerHTML = lista.join("<br/>")
+        }
+
+        
+    </script>
+</body>
+</html>
