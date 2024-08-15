@@ -11,20 +11,30 @@
         <input type="text" name="nome" id="nome">
         <br>
         <button type="button" id="btn_salvar" onclick="adicionarValor()">Salvar</button>
+        <button type="button" id="btn_salvar" onclick="removerValor()" >Remover</button>
     </form>
+
     <div id="exibicao_lista"></div>
 
     <script>
         const lista = []
+
+        function atualizarHTML(){
+            document.getElementById('exibicao_lista').innerHTML = lista.join("<br/>")
+        }
 
         function adicionarValor () {
             const nome = document.getElementById('nome').value;
             lista.push(nome);
             document.getElementById('nome').value = "";
 
-            document.getElementById('exibicao_lista').innerHTML = lista.join("<br/>")
+            atualizarHTML()
         }
 
+        function removerValor() {
+            lista.shift()
+            atualizarHTML()
+        }
         
     </script>
 </body>
