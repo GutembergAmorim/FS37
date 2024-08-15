@@ -7,10 +7,23 @@
 </head>
 <body>
     <script>
+        const alunos = []
+
         let inicio = 0
-        for(inicio; inicio < 5; inicio++){
-            alert("Ola " + inicio)
+        for(inicio; inicio < 6; inicio++){
+            const nome = prompt("Adiccione o numero: " + inicio)
+            alunos.push(nome)
         }
+
+        let indice = 0;
+        for(incice; indice < alunos.length; indice++) {
+            const nome = alunos[indice];
+            if(nome.length === 5){
+                alert(nome);
+            }
+        }
+
+        document.write(alunos.join(" , "));
     </script>
 </body>
 </html>
