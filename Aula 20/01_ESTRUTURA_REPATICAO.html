@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const alunos = ["Ana", "Maria", "Carla", "Edi"]
+       // FOR
+       for ( let i = 0; i < alunos.length; i++){
+        console.log(alunos[i])
+       } 
+
+       const pessoas = ["Ana", "Maria", "Carla", "Edi", "Bruno"]
+       //FOREACH
+       function lerPosicao(nome, indice){ //O foreach ler posição por posição e retorna o valor e o indice (opcional)
+        alert(indice + " - " + nome)
+       }
+       pessoas.forEach(lerPosicao);
+
+        //Formas de escrever function
+        //1 function nomeDaFuncao (parametro) {codigo}
+        //2 function (parametro) {codigo}
+        //3 (parametro) => {codigo}
+
+        //Ex: array.forEach(() => {})
+        //Ex: array.forEach(function(){})
+        //EX: array.forEach(nomeDaFuncao)
+
+    </script>
+</body>
+</html>
