@@ -7,6 +7,10 @@
 </head>
 <body>
     
+    <ul id="lista">
+
+    </ul>
+
     <script>
         const alunos = ["Ana", "Maria", "Carla", "Edi"]
        // FOR
@@ -17,7 +21,7 @@
        const pessoas = ["Ana", "Maria", "Carla", "Edi", "Bruno"]
        //FOREACH
        function lerPosicao(nome, indice){ //O foreach ler posição por posição e retorna o valor e o indice (opcional)
-        alert(indice + " - " + nome)
+        // alert(indice + " - " + nome)
        }
        pessoas.forEach(lerPosicao);
 
@@ -30,6 +34,38 @@
         //Ex: array.forEach(function(){})
         //EX: array.forEach(nomeDaFuncao)
 
+
+       //MAP
+       let montagemHtml = ''
+       pessoas.map((valor, indice) => { //O map tem comportamento parecido com forEach
+        montagemHtml += `<li>${valor}</li>`
+       })
+       document.getElementById('lista').innerHTML = montagemHtml
+
+       console.log(montagemHtml)
+
+       //FILTER
+       const pessoasFiltradas = pessoas.filter((nome, posição) => { //O filter "filtra" os valores da string e retorna esse valor. Seja tamanho de caracteres, ou palavras especificas.
+            if(nome.length === 3){
+                return nome;
+            }
+       })
+
+       console.log(pessoasFiltradas)
+
+       //DECIMAIS - FLOAT
+       const valores = [12000.98, 10239.0, 9875.99];
+       //REDUCE
+       const total = valores.reduce((valorAcumulado, valorDaPosicao) => { //array.reduce((acumulado, valorDaPosicao) => {}, 0) ZERO é o valor inicial.
+            console.log(`Valor acumulado é: ${valorAcumulado}`)
+            console.log(`Valor da posição é: ${valorDaPosicao}`)
+            return valorAcumulado + valorDaPosicao
+
+       }, 0)
+
+       console.log(total)
+        
+       
     </script>
 </body>
 </html>
