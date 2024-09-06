@@ -1,17 +1,15 @@
-import Header from "./componentes/Header"
-import Receitas from "./componentes/Receitas"
+import Blog from "./componentes/Blog"
+import Cabecalho from "./componentes/Cabecalho"
+import Rodape from "./componentes/Rodape"
+
 
 function App() {
   
   return (
     <>
-      <Header />
-      <main>
-        <Receitas />
-      </main>
-      <footer>
-        Rodapé
-      </footer>
+      <Cabecalho />
+      <Blog />
+      <Rodape />
     </>
   )
 }
