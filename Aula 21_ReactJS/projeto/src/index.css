@@ -31,5 +31,10 @@ main{
 
 footer{
     display: flex;
+    background-color: black;
+    color: antiquewhite;
+    height: 200px;
+    padding: 10px;
+    justify-content: center;
 
 }
