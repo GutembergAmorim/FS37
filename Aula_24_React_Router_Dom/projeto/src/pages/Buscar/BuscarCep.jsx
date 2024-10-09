@@ -26,7 +26,7 @@ const BuscarCep = () => {
                     <div className="col-md-4 offset-md-4 mt-5">
                         <div className="mb-2">
                             <label htmlFor="">Digite o CEP</label>
-                            <input type="text" name="cep" id="cep" className="form-control" onChange={(e) => { setCep(e.target.value)}} />
+                            <input type="text" name="cep" id="cep" className="form-control"  onChange={(e) => { setCep(e.target.value)}} />
                         </div>
                         <div className="mb-2">
                             <label htmlFor="">Rua</label>
